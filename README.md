@@ -131,7 +131,7 @@ Just follow the Quick Start to set this up for Claude Desktop, Cursor, or anothe
          "command": "uv",
          "args": [
            "--directory",
-           "/ABSOLUTE/PATH/TO/PARENT/FOLDER/flights",
+           "/ABSOLUTE/PATH/TO/PARENT/FOLDER",
            "run",
            "flights.py"
          ]

@@ -105,8 +105,8 @@ Just follow the Quick Start to set this up for Claude Desktop, Cursor, or anothe
 
    #### MacOS
 
-   - Config file location: `~/Library/Application Support/Claude/claude_desktop_config.json`
-   - Create/edit using:
+   - Navigate to the config file location via Terminal: `~/Library/Application Support/Claude/claude_desktop_config.json`
+   - OR if you have VSCode adn the Code alias, you can just create/edit using:
 
    ```bash
    code ~/Library/Application\ Support/Claude/claude_desktop_config.json
@@ -114,8 +114,8 @@ Just follow the Quick Start to set this up for Claude Desktop, Cursor, or anothe
 
    #### Windows
 
-   - Config file location: `%AppData%\Claude\claude_desktop_config.json`
-   - Create/edit using:
+   - Navigate to the config file location via PowerShell: `%AppData%\Claude\claude_desktop_config.json`
+   - OR if you have VSCode adn the Code alias, you can just create/edit using:
 
    ```powershell
    code $env:AppData\Claude\claude_desktop_config.json

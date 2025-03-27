@@ -97,7 +97,9 @@ Just follow the Quick Start to set this up for Claude Desktop, Cursor, or anothe
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
 
-   Restart your terminal for the `uv` command to get picked up
+   ⚠️ IMPORTANT: After installation, you must restart your terminal for the `uv` command to get picked up.
+   Seriously. Restart the Terminal lol
+
 
 4. Add this flights MCP Server to your Claude for Desktop config:
 

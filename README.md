@@ -11,6 +11,12 @@ This MCP server provides seamless access to Google Flights data, enabling your A
 - Filter flights based on **Specific Time Constraints**
 - Get Google Flights' recommended **Best Flights**
 
+<br>
+
+> **Note:** Currently, this tool only does one-ways (if you ask for a round-trip, it'll do two one-ways though!) as I built it as a fun pet project to learn about MCPs.
+>
+> If anyone actually finds this useful or wants me to, I can work on adding Round-Trip and Multi-City functionality!! Just raise a PR or [hit me up](https://sahit-personal-website.vercel.app/)!
+
 ## 🎥 Usage & Demo
 
 Just follow the Quick Start to set this up for Claude Desktop, Cursor, or another MCP Client and just ask away to find out about your desired flight info!!
@@ -128,7 +134,7 @@ Just follow the Quick Start to set this up for Claude Desktop, Cursor, or anothe
    {
      "mcpServers": {
        "flights": {
-         "command": "uv",
+         "command": "/ABSOLUTE/PATH/.local/bin/uv",
          "args": [
            "--directory",
            "/ABSOLUTE/PATH/TO/PARENT/FOLDER",
@@ -140,11 +146,35 @@ Just follow the Quick Start to set this up for Claude Desktop, Cursor, or anothe
    }
    ```
 
-   Make sure to modify the code to include the Absolute Path to this Repo.
+   Make sure to modify the code to include the Absolute Path for `uv` for the `command` param and for the Absolute Path for the `args` param to this Repo.
+
+    You may need to put the full path to the `uv` executable in the command field. You can get this by running:
+    - `which uv` on MacOS/Linux
+    - `where uv` on Windows
+
+    Example:
+
+   ```json
+   {
+     "mcpServers": {
+       "flights": {
+         "command": "/Users/sahitmamidipaka/.local/bin/uv",
+         "args": [
+           "--directory",
+           "/Users/sahitmamidipaka/Documents/Google-Flights-MCP-Server",
+           "run",
+           "flights.py"
+         ]
+       }
+     }
+   }
+   ```
+
+
+
+
 
 6. That's it! Open Claude for Desktop and you should see the little MCP Tools icon appear (make sure to re-open the app for updates to take place—you'll need to do this whenever you change your `claude_desktop_config.json` file 😊)
-
-Note: If you get an Error, try adding the absolute path for `uv`. Refer to the UV Set Up Issue Section below.
 
 <!-- Claude Desktop MCP Tools Icon -->
 <img src="./assets/images/claude-mcp-tool.png" alt="Claude Desktop MCP Tools Icon" />
@@ -179,7 +209,7 @@ For more information, refer to the [Official MCP Documentation](https://modelcon
          "command": "uv",
          "args": [
            "--directory",
-           "/ABSOLUTE/PATH/TO/PARENT/FOLDER/flights",
+           "/ABSOLUTE/PATH/TO/PARENT/FOLDER",
            "run",
            "flights.py"
          ]
@@ -188,22 +218,36 @@ For more information, refer to the [Official MCP Documentation](https://modelcon
    }
    ```
 
-   Make sure to replace `/ABSOLUTE/PATH/TO/PARENT/FOLDER/flights` with the actual path to this repo.
+   Make sure to replace `/ABSOLUTE/PATH/TO/PARENT/FOLDER` with the actual path to this repo.
 
-   Example: `/Users/sahitmamidipaka/Documents/Google-Flights-MCP-Server`
+   You may need to put the full path to the `uv` executable in the command field. You can get this by running:
+    - `which uv` on MacOS/Linux
+    - `where uv` on Windows
+
+   Example:
+
+   ```json
+   {
+     "mcpServers": {
+       "flights": {
+         "command": "/Users/sahitmamidipaka/.local/bin/uv",
+         "args": [
+           "--directory",
+           "/Users/sahitmamidipaka/Documents/Google-Flights-MCP-Server",
+           "run",
+           "flights.py"
+         ]
+       }
+     }
+   }
+   ```
+
 
 <!-- Cursor MCP Image -->
 <img src="./assets/images/cursor-mcp.png" alt="Cursor Flights MCP Image" />
 
-Note: If you get an Error, try adding the absolute path for `uv`. Refer to the UV Set Up Issue Section below.
-
 For more information, refer to the [Official Cursor MCP Documentation](https://docs.cursor.com/context/model-context-protocol).
 
-### UV Set Up Issue
-
-You may need to put the full path to the `uv` executable in the command field. You can get this by running:
-- `which uv` on MacOS/Linux
-- `where uv` on Windows
 
 ## 🚀 Example Usage
 

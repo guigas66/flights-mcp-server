@@ -68,6 +68,7 @@ Just follow the Quick Start to set this up for Claude Desktop, Cursor, or anothe
 
 ## ⚡ Quick Start
 
+
 ### Claude Desktop
 
 1. Make sure you have the latest [Claude for Desktop](https://claude.ai/download) downloaded!
@@ -148,6 +149,7 @@ Note: If you get an Error, try adding the absolute path for `uv`. Refer to the U
 <img src="./assets/images/claude-mcp-tool.png" alt="Claude Desktop MCP Tools Icon" />
 
 For more information, refer to the [Official MCP Documentation](https://modelcontextprotocol.io/quickstart/server).
+<br>
 
 ### Cursor
 

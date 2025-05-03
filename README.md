@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/smamidipaka6-flights-mcp-server-badge.png)](https://mseep.ai/app/smamidipaka6-flights-mcp-server)
+
 # Google Flights MCP Server
 
 A Model Context Protocol (MCP) server implementation that connects your Agents or LLMs to Google Flights data. Access flight information, find the cheapest options, filter by time restrictions, and get Google Flights' best recommendations!

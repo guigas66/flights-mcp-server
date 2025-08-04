@@ -2,7 +2,7 @@ from typing import Any
 import httpx
 from mcp.server.fastmcp import FastMCP
 
-from fast_flights import FlightData, Passengers, Result, get_flights, search_airport
+from fast_flights import FlightData, Passengers, Result, get_flights
 from dataclasses import asdict
 
 from datetime import datetime

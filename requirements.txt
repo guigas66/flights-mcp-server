@@ -1,2 +1,4 @@
 fastapi[all]
 mcp
+httpx
+mcp
